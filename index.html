@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kartu Ucapan Interaktif</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Kartu Ucapan Interaktif</h1>
+    <div id="greetingCard">
+        <div id="cardContent">
+            <h2>Selamat Ulang Tahun!</h2>
+            <img id="uploadedImg" src="placeholder.jpg" alt="Foto">
+            <audio id="uploadedAudio" controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+    <form id="form">
+        <label for="photoUpload">Pilih Foto:</label>
+        <input type="file" id="photoUpload" accept="image/*">
+        <label for="audioUpload">Pilih Audio:</label>
+        <input type="file" id="audioUpload" accept="audio/*">
+        <button type="submit">Buat Kartu Ucapan</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
